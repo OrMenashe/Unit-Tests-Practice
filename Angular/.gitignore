@@ -2,15 +2,10 @@
 node_modules/*
 **/node_modules/*
 .DS_Store
-log/*
 .idea
-service.log*
-*.log
 .history
 public
 dist
 unit/
 !src/**/*
-.eslintcache
-/out-tsc/**/*
 /.stylelintcache
