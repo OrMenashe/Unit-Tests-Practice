@@ -10,10 +10,7 @@ service.log*
 public
 dist
 unit/
-/coverage/
 !src/**/*
-/src/coverage
-/server/properties/properties.json
 .eslintcache
 /out-tsc/**/*
 /.stylelintcache
