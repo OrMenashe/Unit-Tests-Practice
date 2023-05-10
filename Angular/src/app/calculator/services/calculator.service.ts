@@ -5,11 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class CalculatorService {
 
-  add(firstNumber: number, secondNumber: number): number {
-    return firstNumber + secondNumber;
+  getSum = (numbers: number[]): number => {
+    let sum: number = 0;
+    for (const number of numbers) {
+      sum += number;
+    }
+    return sum;
   }
 
-  multiply(firstNumber: number, secondNumber: number): number {
-    return firstNumber * secondNumber;
+  getMultiple = (numbers: number[]): number => {
+    let sum: number = 1;
+    for (const number of numbers) {
+      sum *= number;
+    }
+    return sum;
   }
 }

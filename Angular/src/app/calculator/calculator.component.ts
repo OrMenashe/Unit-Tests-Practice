@@ -19,10 +19,10 @@ export class CalculatorComponent {
   calculate(): void {
     switch (this.selectedOperation) {
       case OperationTypes.Add:
-        this.result = this.calculatorService.add(this.firstNumber, this.secondNumber);
+        this.result = this.calculatorService.getSum([this.firstNumber, this.secondNumber]);
         break;
       case OperationTypes.Multiply:
-        this.result = this.calculatorService.multiply(this.firstNumber, this.secondNumber);
+        this.result = this.calculatorService.getMultiple([this.firstNumber, this.secondNumber]);
         break;
     }
   }
