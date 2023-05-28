@@ -1,0 +1,11 @@
+/.angular/cache
+node_modules/*
+**/node_modules/*
+.DS_Store
+.idea
+.history
+public
+dist
+unit/
+!src/**/*
+/.stylelintcache
