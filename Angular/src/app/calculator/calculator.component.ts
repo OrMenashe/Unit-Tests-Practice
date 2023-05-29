@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import { CalculatorService } from "./services/calculator.service";
 import { OperationTypes } from "./enums/operation-types.enum";
-import {FormBuilder, FormControl, FormGroup, UntypedFormBuilder, Validators} from "@angular/forms";
+import { FormControl, FormGroup, UntypedFormBuilder, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-calculator',
