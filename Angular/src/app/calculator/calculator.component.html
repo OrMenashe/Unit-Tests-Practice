@@ -1,28 +1,28 @@
 <div class="calculator" [formGroup]="calculatorForm">
-  <h1 class="calculator__title">Calculator</h1>
+  <h1 class="calculator-title" data-test="calculator-title">Calculator</h1>
 
-  <div class="calculator__operation">
-    <label class="calculator__radio-label">
-      <input id="add-operation" type="radio" name="selectedOperation" [value]="operationTypes.Add" formControlName="selectedOperation" class="calculator__radio-input" /> Addition
+  <div class="calculator-operation">
+    <label class="calculator-radio-label">
+      <input id="add-operation" type="radio" name="selectedOperation" [value]="operationTypes.Add" formControlName="selectedOperation" class="calculator-radio-input" /> Addition
     </label>
-    <label class="calculator__radio-label">
-      <input id="multiply-operation" type="radio" name="selectedOperation" [value]="operationTypes.Multiply" formControlName="selectedOperation" class="calculator__radio-input" /> Multiplication
+    <label class="calculator-radio-label">
+      <input id="multiply-operation" type="radio" name="selectedOperation" [value]="operationTypes.Multiply" formControlName="selectedOperation" class="calculator-radio-input" /> Multiplication
     </label>
   </div>
 
-  <div class="calculator__input-group">
-    <label class="calculator__label">First Number:</label>
-    <input type="number" formControlName="firstNumber"  class="calculator__input" />
+  <div class="calculator-input-group">
+    <label class="calculator-label">First Number:</label>
+    <input type="number" data-test="first-number-input" formControlName="firstNumber"  class="calculator-input" />
   </div>
 
-  <div class="calculator__input-group">
-    <label class="calculator__label">Second Number:</label>
-    <input type="number" formControlName="secondNumber"  class="calculator__input" />
+  <div class="calculator-input-group">
+    <label class="calculator-label">Second Number:</label>
+    <input type="number" data-test="second-number-input" formControlName="secondNumber"  class="calculator-input" />
   </div>
 
-  <button (click)="calculate()" class="calculator__button">Calculate</button>
+  <button (click)="calculate()" data-test="calculate-button" class="calculator-button">Calculate</button>
 
-  <div class="calculator__result" *ngIf="result !== null">
-    <p class="calculator__result-text">Result: {{ result }}</p>
+  <div class="calculator-result" *ngIf="result !== null">
+    <p class="calculator-result-text" data-test="result">Result: {{ result }}</p>
   </div>
 </div>
