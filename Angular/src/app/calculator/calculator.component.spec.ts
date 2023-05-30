@@ -36,7 +36,7 @@ describe('CalculatorComponent', () => {
     calculatorServiceMock = TestBed.inject(CalculatorService);
   });
 
-  describe('Component finished rendering', () => {
+  describe('Component initial state', () => {
     beforeEach(() => {
       fixture.detectChanges();
     });
@@ -45,12 +45,16 @@ describe('CalculatorComponent', () => {
       expect(domTestingService.getElement(dataTests.title)).toBeTruthy();
     });
 
-    it('first number input should be 0', () => {
-      expect(domTestingService.getElement(dataTests.firstNumberInput).value).toBe('0');
+    it('first number input should be the default', () => {
+      const expectedDefaultNumber = '0';
+
+      expect(domTestingService.getElement(dataTests.firstNumberInput).value).toBe(expectedDefaultNumber);
     })
 
-    it('second number input should be 0', () => {
-      expect(domTestingService.getElement(dataTests.firstNumberInput).value).toBe('0');
+    it('second number input should be the default', () => {
+      const expectedDefaultNumber = '0';
+
+      expect(domTestingService.getElement(dataTests.firstNumberInput).value).toBe(expectedDefaultNumber);
     })
   });
 });
